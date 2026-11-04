@@ -42,6 +42,12 @@ Written to `<recording name>_work/` beside the recording:
 - `faster-whisper` (`process.py` installs it if it's missing)
 - The `miyo` CLI, which `comments.py` uses for OCR. To use another OCR tool, replace the `ocr()` function.
 
+## What it produced
+
+I fed the output into my notes and gave every entry a job in an action plan. This image is an excerpt from those notes, with personal rows left out. Sorting the entries and writing the plan happened after the pipeline ran, with Claude Code's help, so this code doesn't generate the plan by itself.
+
+![Action plan totals and a sample of the sites directory](docs/action-plan-excerpt.png)
+
 ## Known limits
 
 - **Fixed layout:** the crop boxes were measured on a 2560x1440 Firefox window with TikTok's collection player open. Other layouts need new values for `CROPS` in `process.py` and `PANEL` in `comments.py`.
